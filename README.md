@@ -3,10 +3,12 @@
 <TODO: complete this with an overview of your project>
 
 ## Project Plan
-<TODO: Project Plan
+Create a azure pipeline azure Continuous Integration and Continuous Delivery using azure piplines and github action.
 
 * A link to a Trello board for the project
+https://trello.com/b/JBlYiBbd/to-do
 * A link to a spreadsheet that includes the original and final project plan>
+https://docs.google.com/spreadsheets/d/1YjrBt-l6RQC9xPeYgFklU0uK3osKhnzwvnNehwnNigc/edit?usp=sharing
 
 ## Instructions
 
