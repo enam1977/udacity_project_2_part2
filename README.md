@@ -19,12 +19,13 @@ A compound of development (Dev) and operations (Ops), DevOps is the union of peo
 What does DevOps mean for teams? DevOps enables formerly siloed roles—development, IT operations, quality engineering, and security—to coordinate and collaborate to produce better, more reliable products. By adopting a DevOps culture along with DevOps practices and tools, teams gain the ability to better respond to customer needs, increase confidence in the applications they build, and achieve business goals faster.
 
 DevOps practices
-Continuous integration and continuous delivery (CI/CD)
-Version Control
-Agile software development
-Infrastructure as code
-Configuration management
-Continuous monitoring
+
+* Continuous integration and continuous delivery (CI/CD)
+* Version Control
+* Agile software development
+* Infrastructure as code
+* Configuration management
+* Continuous monitoring
 
 
 Architectural Diagram
@@ -52,17 +53,6 @@ A simple board based flow: To Do, In Progress, Done.
 
 
 
-The README includes a link to the screencast on YouTube, which meets the following criteria:
-
-Screencast is 1-5 minutes in length
-Audio is clear
-Video is 1080P or higher and text visible
-The screencast shows the entire process of the working application, including a demonstration of:
-
-Working Azure Cloud Shell environment for Continuous Integration
-Working GitHub Actions build
-Successful deployment using Continuous Delivery on the Azure platform.
-Successful machine learning prediction that returns back a JSON payload
 
 
 #Continuous Integration
@@ -145,6 +135,18 @@ Port: 443
 <TODO: A short description of how to improve the project in the future>
 
 ## Demo 
+  
+
+Screencast is 1-5 minutes in length
+Audio is clear
+Video is 1080P or higher and text visible
+The screencast shows the entire process of the working application, including a demonstration of:
+
+Working Azure Cloud Shell environment for Continuous Integration
+Working GitHub Actions build
+Successful deployment using Continuous Delivery on the Azure platform.
+Successful machine learning prediction that returns back a JSON payload
+
 
 <TODO: Add link Screencast on YouTube>
 
