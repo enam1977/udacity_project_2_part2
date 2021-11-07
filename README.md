@@ -10,6 +10,87 @@ https://trello.com/b/JBlYiBbd/to-do
 * A link to a spreadsheet that includes the original and final project plan>
 https://docs.google.com/spreadsheets/d/1YjrBt-l6RQC9xPeYgFklU0uK3osKhnzwvnNehwnNigc/edit?usp=sharing
 
+#Azure DevOps Principles and Practices
+
+An overview of the project
+Architectural Diagram
+Instructions for running the Python project
+A short description of how to improve the project in the future
+Screenshots demonstrating key steps
+
+
+The README includes:
+
+A link to a Trello board for the project
+A link to a spreadsheet that includes the original and final project plan (alternatively, the spreadsheet can be included as an .xls file in the GitHub repo)
+The spreadsheet contains:
+
+A quarterly and yearly plan
+Estimates of the week by week deliverables
+Estimation of difficulty or time (or both) for each task
+The Trello board contains:
+
+Cards for key tasks
+A simple board based flow: To Do, In Progress, Done.
+
+
+
+The README includes a link to the screencast on YouTube, which meets the following criteria:
+
+Screencast is 1-5 minutes in length
+Audio is clear
+Video is 1080P or higher and text visible
+The screencast shows the entire process of the working application, including a demonstration of:
+
+Working Azure Cloud Shell environment for Continuous Integration
+Working GitHub Actions build
+Successful deployment using Continuous Delivery on the Azure platform.
+Successful machine learning prediction that returns back a JSON payload
+
+
+#Continuous Integration
+
+
+CRITERIA
+MEETS SPECIFICATIONS
+Clone and build an application inside of Azure Cloud Shell.
+
+The README contains:
+
+A screenshot showing the project cloned into Azure Cloud Shell.
+A screenshot showing the passing tests that are displayed after running the make all command from the Makefile.
+
+Conduct a test run on an application in Azure Cloud Shell.
+
+The README contains a screenshot showing the output of a test run.
+
+Use GitHub Actions to test and lint a project while writing code.
+
+The GitHub repo contains the GitHub Actions YAML file
+
+The GitHub actions badge is shown in the README, like in this screenshot.
+
+
+#Continuous Delivery
+
+Load test an application using Locust.
+The README contains a screenshot of the application running against a load test with locust.
+
+There is a locustfile.py file in the repo that is a working example of the load test script specified in the instructions.
+Deploy an application using Azure Pipelines into Azure App Services.
+
+The README contains screenshots of the project deployed into an Azure Azure App Service via Azure Pipelines. This should include:
+A screenshot of Azure Azure App Service
+A screenshot of a successful prediction in Azure Cloud Shell
+
+
+Use the Azure CLI to deploy and manage an application.
+The GitHub repo contains Azure CLI commands in a Bash script called commands.sh, including az webapp up -n <your-appservice>
+
+
+Test an application inside of Azure Pipelines
+The README contains a screenshot of a successful run of the project in Azure Pipelines.
+
 ## Instructions
 
 <TODO:  
