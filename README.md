@@ -1,6 +1,6 @@
 # Overview
 
-<TODO: complete this with an overview of your project>
+Create a azure pipeline azure Continuous Integration and Continuous Delivery using azure piplines and github action.
 
 ## Project Plan
 Create a azure pipeline azure Continuous Integration and Continuous Delivery using azure piplines and github action.
