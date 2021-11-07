@@ -3,7 +3,8 @@
 Create a azure pipeline azure Continuous Integration and Continuous Delivery using azure piplines and github action.
 
 ## Project Plan
-Create a azure pipeline azure Continuous Integration and Continuous Delivery using azure piplines and github action.
+
+First to create a project plan in Trello and spreadsheet. Here is the link for both below
 
 * A link to a Trello board for the project
 https://trello.com/b/JBlYiBbd/to-do
@@ -12,8 +13,24 @@ https://docs.google.com/spreadsheets/d/1YjrBt-l6RQC9xPeYgFklU0uK3osKhnzwvnNehwnN
 
 #Azure DevOps Principles and Practices
 
-An overview of the project
+Devops Definition
+
+A compound of development (Dev) and operations (Ops), DevOps is the union of people, process, and technology to continually provide value to customers.
+What does DevOps mean for teams? DevOps enables formerly siloed roles—development, IT operations, quality engineering, and security—to coordinate and collaborate to produce better, more reliable products. By adopting a DevOps culture along with DevOps practices and tools, teams gain the ability to better respond to customer needs, increase confidence in the applications they build, and achieve business goals faster.
+
+DevOps practices
+Continuous integration and continuous delivery (CI/CD)
+Version Control
+Agile software development
+Infrastructure as code
+Configuration management
+Continuous monitoring
+
+
 Architectural Diagram
+
+![Screen Shot 2021-11-07 at 11 25 24 AM](https://user-images.githubusercontent.com/54340800/140655153-45fc6034-3070-4ea8-bd2f-993373f6d444.png)
+
 Instructions for running the Python project
 A short description of how to improve the project in the future
 Screenshots demonstrating key steps
