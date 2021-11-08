@@ -163,6 +163,45 @@ Cloud Shell
 
 * Output of a test run
 
+Continious Intrigation: Configure GitHub Actions
+
+![Screen Shot 2021-11-08 at 4 47 06 PM](https://user-images.githubusercontent.com/54340800/140831727-daf829b0-38d1-4b43-b7ae-5c7bee27ade1.png)
+
+Enable Github Actions
+Go to your Github Account and enable Github Actions.
+
+2. Replace yml code
+Replace the pythonapp.yml code with the following scaffolding code.
+
+name: Python application test with Github Actions
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.5
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.5
+    - name: Install dependencies
+      run: |
+        make install
+    - name: Lint with pylint
+      run: |
+        make lint
+    - name: Test with pytest
+      run: |
+        make test
+        
+    <img width="1238" alt="Screen Shot 2021-11-08 at 5 16 39 PM" src="https://user-images.githubusercontent.com/54340800/140833394-8d131cf2-1c8a-4bae-b56d-6faf4e663f10.png">
+
+
+
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
 * Running Azure App Service from Azure Pipelines automatic deployment
