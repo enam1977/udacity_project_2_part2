@@ -83,11 +83,65 @@ Create Storage Account
 
 if you have already storage account you will ge the azure shell like this
 
-<img width="960" alt="Powershell" src="https://user-images.githubusercontent.com/54340800/140675620-58687c86-b026-40a7-80f1-662f6d696b04.png">
+![azure_shell](https://user-images.githubusercontent.com/54340800/140675981-a30f2949-92a5-47f8-ba31-bb51eb11f188.JPG)
 
-Once the Storage Account is created, the shell will start automatically, and you can run the Azure CLI commands as usual.
+In order to create virtual environment you have pu the following command
+python3 -m venv env(this is name of the vistual environment)
+
+Activate the virtual environment by putting
+source .env/bin/activate
+![Virtual env](https://user-images.githubusercontent.com/54340800/140676349-f5d2862f-0909-4163-b13d-b4e0a5ae7cd4.JPG)
+
+Now need to creat ssh-keys to put in the github. 
+
+<img width="890" alt="SSH-keys" src="https://user-images.githubusercontent.com/54340800/140676773-c81ae2da-1bc9-4990-8a88-f802d600c190.png">
+
+Enter ls -al ~/.ssh to see if existing SSH keys are present.
+
+Generating a new SSH key and adding it to the ssh-agent
+
+Paste the text below, substituting in your GitHub email address.
+
+$ ssh-keygen -t ed25519 -C "your_email@example.com"
+
+When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
+
+> Enter a file in which to save the key (/c/Users/you/.ssh/id_algorithm):[Pr
+
+At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases."
+
+> Enter passphrase (empty for no passphrase): [Type a passphrase]
+> Enter same passphrase again: [Type passphrase again]
+
+Ensure the ssh-agent is running. You can use the "Auto-launching the ssh-agent" instructions in "Working with SSH key passphrases", or start it manually:
+
+# start the ssh-agent in the background
+
+
+$ eval "$(ssh-agent -s)"
+
+
+Add your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_ed25519 in the command with the name of your private key file.
+
+$ ssh-add ~/.ssh/id_ed25519
+
+Adding a new SSH key to your GitHub account
+
+Copy the SSH public key to your clipboard.
+
+If your SSH public key file has a different name than the example code, modify the filename to match your current setup. When copying your key, don't add any newlines or whitespace.
+
+$ pbcopy < ~/.ssh/id_ed25519.pub
+<img width="890" alt="SSH-keys_paste" src="https://user-images.githubusercontent.com/54340800/140677693-0ce291fd-ee5c-4ab6-bc14-d6589def1967.png">
+
+
+
+
+
+
 
 Cloud Shell
+
 
 
 ![project clone](https://user-images.githubusercontent.com/54340800/140670440-6943090e-a5cb-494f-bd6d-6d83da329551.png)
