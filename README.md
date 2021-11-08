@@ -85,12 +85,9 @@ if you have already storage account you will ge the azure shell like this
 
 <img width="960" alt="Powershell" src="https://user-images.githubusercontent.com/54340800/140675620-58687c86-b026-40a7-80f1-662f6d696b04.png">
 
-Figure 10 – Create Storage Account
-
 Once the Storage Account is created, the shell will start automatically, and you can run the Azure CLI commands as usual.
 
 Cloud Shell
-
 
 
 ![project clone](https://user-images.githubusercontent.com/54340800/140670440-6943090e-a5cb-494f-bd6d-6d83da329551.png)
