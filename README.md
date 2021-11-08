@@ -65,6 +65,8 @@ Launch the azure shell environment ,create ssh-keys and upload the Github
 Another method of using the Azure CLI is by using the cloud shell component which can be accessed after logging in to the Azure portal. Once you are logged in to Azure, click on the command button available on the top of the portal.
 
 Azure Cloud Shell
+<img width="960" alt="Powershell" src="https://user-images.githubusercontent.com/54340800/140675349-ad2fae62-98e1-4c2c-9c49-c07f307fe519.png">
+
 
 Figure 8 – Azure Cloud Shell
 
@@ -75,9 +77,13 @@ Select PowerShell
 
 Figure 9 – Select PowerShell
 
-Once you click on the PowerShell, the next step will be to select the Subscription to proceed ahead. We need to create a simple Storage Account here in order to store the cloud shell scripts to be stored and executed. Go ahead and click on Create Storage. It might take some time to create the necessary storage requirements.
+Once you click on the PowerShell, the next step will be to select the Subscription to proceed ahead. If you dont have any storage account you need to create a simple Storage Account here in order to store the cloud shell scripts to be stored and executed. Go ahead and click on Create Storage. It might take some time to create the necessary storage requirements.
 
 Create Storage Account
+
+if you have already storage account you will ge the azure shell like this
+
+<img width="960" alt="Powershell" src="https://user-images.githubusercontent.com/54340800/140675620-58687c86-b026-40a7-80f1-662f6d696b04.png">
 
 Figure 10 – Create Storage Account
 
