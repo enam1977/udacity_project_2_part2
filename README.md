@@ -28,80 +28,23 @@ DevOps practices
 * Continuous monitoring
 
 
-Architectural Diagram
 
-![Screen Shot 2021-11-07 at 11 25 24 AM](https://user-images.githubusercontent.com/54340800/140655153-45fc6034-3070-4ea8-bd2f-993373f6d444.png)
 
 Instructions for running the Python project
 A short description of how to improve the project in the future
 Screenshots demonstrating key steps
 
 
-The README includes:
-
-A link to a Trello board for the project
-A link to a spreadsheet that includes the original and final project plan (alternatively, the spreadsheet can be included as an .xls file in the GitHub repo)
-The spreadsheet contains:
-
-A quarterly and yearly plan
-Estimates of the week by week deliverables
-Estimation of difficulty or time (or both) for each task
-The Trello board contains:
-
-Cards for key tasks
-A simple board based flow: To Do, In Progress, Done.
-
-
-
-
-
-#Continuous Integration
-
-
-CRITERIA
-MEETS SPECIFICATIONS
-Clone and build an application inside of Azure Cloud Shell.
-
-The README contains:
-
-A screenshot showing the project cloned into Azure Cloud Shell.
-A screenshot showing the passing tests that are displayed after running the make all command from the Makefile.
-
-Conduct a test run on an application in Azure Cloud Shell.
-
-The README contains a screenshot showing the output of a test run.
-
-Use GitHub Actions to test and lint a project while writing code.
-
-The GitHub repo contains the GitHub Actions YAML file
-
-The GitHub actions badge is shown in the README, like in this screenshot.
-
-
-#Continuous Delivery
-
-Load test an application using Locust.
-The README contains a screenshot of the application running against a load test with locust.
-
-There is a locustfile.py file in the repo that is a working example of the load test script specified in the instructions.
-Deploy an application using Azure Pipelines into Azure App Services.
-
-The README contains screenshots of the project deployed into an Azure Azure App Service via Azure Pipelines. This should include:
-A screenshot of Azure Azure App Service
-A screenshot of a successful prediction in Azure Cloud Shell
-
-
-Use the Azure CLI to deploy and manage an application.
-The GitHub repo contains Azure CLI commands in a Bash script called commands.sh, including az webapp up -n <your-appservice>
-
-
-Test an application inside of Azure Pipelines
-The README contains a screenshot of a successful run of the project in Azure Pipelines.
 
 ## Instructions
 
 <TODO:  
 * Architectural Diagram (Shows how key parts of the system work)>
+
+
+Architectural Diagram
+
+![Screen Shot 2021-11-07 at 11 25 24 AM](https://user-images.githubusercontent.com/54340800/140655153-45fc6034-3070-4ea8-bd2f-993373f6d444.png)
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
@@ -109,7 +52,11 @@ The README contains a screenshot of a successful run of the project in Azure Pip
 
 * Project cloned into Azure Cloud Shell
 
+![project clone](https://user-images.githubusercontent.com/54340800/140670440-6943090e-a5cb-494f-bd6d-6d83da329551.png)
+
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
+*
+![Make_all](https://user-images.githubusercontent.com/54340800/140670388-7e6fc89e-bf29-41cf-be53-07b2d3bd70db.png)
 
 * Output of a test run
 
@@ -120,15 +67,15 @@ The README contains a screenshot of a successful run of the project in Azure Pip
 * Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
 The output should look similar to this:
 
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
+![Make_prediction](https://user-images.githubusercontent.com/54340800/140670530-4fc67988-0af9-45ff-972e-8bcd2cd4df1b.png)
+
 
 * Output of streamed log files from deployed application
 
-> 
+![Logfiles](https://user-images.githubusercontent.com/54340800/140670926-581c3912-2b9e-456c-b437-74245004e364.png)
+
+
+[{"machineName":"pl1sdlwk00013G_default","lastUpdated":"2021-11-08T01:25:48.1705213Z","size":2070,"href":"https://flask-azure-project2.scm.azurewebsites.net/api/vfs/LogFiles/2021_11_08_pl1sdlwk00013G_default_docker.log","path":"/home/LogFiles/2021_11_08_pl1sdlwk00013G_default_docker.log"},{"machineName":"pl1sdlwk00013G","lastUpdated":"2021-11-07T20:22:09.6733635Z","size":17138,"href":"https://flask-azure-project2.scm.azurewebsites.net/api/vfs/LogFiles/2021_11_07_pl1sdlwk00013G_docker.log","path":"/home/LogFiles/2021_11_07_pl1sdlwk00013G_docker.log"}]
 
 ## Enhancements
 
