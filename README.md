@@ -75,8 +75,6 @@ The output should look similar to this:
 ![Logfiles](https://user-images.githubusercontent.com/54340800/140670926-581c3912-2b9e-456c-b437-74245004e364.png)
 
 
-[{"machineName":"pl1sdlwk00013G_default","lastUpdated":"2021-11-08T01:25:48.1705213Z","size":2070,"href":"https://flask-azure-project2.scm.azurewebsites.net/api/vfs/LogFiles/2021_11_08_pl1sdlwk00013G_default_docker.log","path":"/home/LogFiles/2021_11_08_pl1sdlwk00013G_default_docker.log"},{"machineName":"pl1sdlwk00013G","lastUpdated":"2021-11-07T20:22:09.6733635Z","size":17138,"href":"https://flask-azure-project2.scm.azurewebsites.net/api/vfs/LogFiles/2021_11_07_pl1sdlwk00013G_docker.log","path":"/home/LogFiles/2021_11_07_pl1sdlwk00013G_docker.log"}]
-
 ## Enhancements
 
 <TODO: A short description of how to improve the project in the future>
