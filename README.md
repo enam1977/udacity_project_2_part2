@@ -135,16 +135,27 @@ $ pbcopy < ~/.ssh/id_ed25519.pub
 <img width="890" alt="SSH-keys_paste" src="https://user-images.githubusercontent.com/54340800/140677693-0ce291fd-ee5c-4ab6-bc14-d6589def1967.png">
 
 
+NOw you have to clone github repo to local drive in the virtual environment
 
+1. Get the code link from the repo
 
+<img width="774" alt="Clone" src="https://user-images.githubusercontent.com/54340800/140678312-4721ee7d-35c8-49ad-9a76-7244cf36a670.png">
+
+in the azure shell put the below commands to get the repo to local drive
+
+git clone git@github.com:enam1977/udacity_project_2_part1.git
+
+<img width="960" alt="clone file" src="https://user-images.githubusercontent.com/54340800/140678660-f50581e7-1b23-4a8a-b6bb-cafeee2fc38a.png">
 
 
 
 Cloud Shell
 
-
-
 ![project clone](https://user-images.githubusercontent.com/54340800/140670440-6943090e-a5cb-494f-bd6d-6d83da329551.png)
+
+
+
+
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 *
