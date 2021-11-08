@@ -52,8 +52,40 @@ Architectural Diagram
 
 * Project cloned into Azure Cloud Shell
 
+https://github.com/
 
 <img width="890" alt="How to create a repo" src="https://user-images.githubusercontent.com/54340800/140673822-e67eebf8-2343-4c09-a194-5448d1618540.png">
+
+There are some other ways you can create the repo and upload the exsitng repo in the github. Here is the link for more info
+
+https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line
+
+Launch the azure shell environment ,create ssh-keys and upload the Github
+
+Another method of using the Azure CLI is by using the cloud shell component which can be accessed after logging in to the Azure portal. Once you are logged in to Azure, click on the command button available on the top of the portal.
+
+Azure Cloud Shell
+
+Figure 8 – Azure Cloud Shell
+
+A new popup window appears at the bottom of the portal where you will be provided with two options to start with the cloud shell – Bash and PowerShell. For the sake of this article, I’m going ahead with the PowerShell. You can also choose to continue with the Bash option.
+
+Select PowerShell
+![AZURESHELL](https://user-images.githubusercontent.com/54340800/140675110-a1ad1d11-2da8-4480-850c-0496e22d5ab0.png)
+
+Figure 9 – Select PowerShell
+
+Once you click on the PowerShell, the next step will be to select the Subscription to proceed ahead. We need to create a simple Storage Account here in order to store the cloud shell scripts to be stored and executed. Go ahead and click on Create Storage. It might take some time to create the necessary storage requirements.
+
+Create Storage Account
+
+Figure 10 – Create Storage Account
+
+Once the Storage Account is created, the shell will start automatically, and you can run the Azure CLI commands as usual.
+
+Cloud Shell
+
+
 
 ![project clone](https://user-images.githubusercontent.com/54340800/140670440-6943090e-a5cb-494f-bd6d-6d83da329551.png)
 
