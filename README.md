@@ -52,6 +52,9 @@ Architectural Diagram
 
 * Project cloned into Azure Cloud Shell
 
+
+<img width="890" alt="How to create a repo" src="https://user-images.githubusercontent.com/54340800/140673822-e67eebf8-2343-4c09-a194-5448d1618540.png">
+
 ![project clone](https://user-images.githubusercontent.com/54340800/140670440-6943090e-a5cb-494f-bd6d-6d83da329551.png)
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
