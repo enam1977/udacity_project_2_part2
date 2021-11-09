@@ -199,13 +199,16 @@ jobs:
         make test
         
     
-    <img width="879" alt="github action" src="https://user-images.githubusercontent.com/54340800/140848805-d567d75e-94da-4b60-a816-592da0f31dc9.png">
+    
+
+
+
+
+
+<img width="879" alt="github action" src="https://user-images.githubusercontent.com/54340800/140848805-d567d75e-94da-4b60-a816-592da0f31dc9.png">
     
     
-    <img width="916" alt="github action2" src="https://user-images.githubusercontent.com/54340800/140851495-82ad30ed-b401-4c62-8a00-10c81f2952c7.png">
-
-
-
+<img width="916" alt="github action2" src="https://user-images.githubusercontent.com/54340800/140851495-82ad30ed-b401-4c62-8a00-10c81f2952c7.png">
 
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
