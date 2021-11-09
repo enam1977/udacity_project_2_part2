@@ -198,9 +198,10 @@ jobs:
       run: |
         make test
         
-    <img width="1238" alt="Screen Shot 2021-11-08 at 5 16 39 PM" src="https://user-images.githubusercontent.com/54340800/140833394-8d131cf2-1c8a-4bae-b56d-6faf4e663f10.png">
+    
+    
 
-
+<img width="1238" alt="Screen Shot 2021-11-08 at 5 16 39 PM" src="https://user-images.githubusercontent.com/54340800/140833394-8d131cf2-1c8a-4bae-b56d-6faf4e663f10.png">
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
