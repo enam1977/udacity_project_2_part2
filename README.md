@@ -217,62 +217,29 @@ jobs:
 
 
 
-#Continuous Integration
-
-
-CRITERIA
-MEETS SPECIFICATIONS
-Clone and build an application inside of Azure Cloud Shell.
-
-The README contains:
-
-A screenshot showing the project cloned into Azure Cloud Shell.
-A screenshot showing the passing tests that are displayed after running the make all command from the Makefile.
-
-Conduct a test run on an application in Azure Cloud Shell.
-
-The README contains a screenshot showing the output of a test run.
-
-Use GitHub Actions to test and lint a project while writing code.
-
-The GitHub repo contains the GitHub Actions YAML file
-
-The GitHub actions badge is shown in the README, like in this screenshot.
-
-
-#Continuous Delivery
-
-Load test an application using Locust.
-The README contains a screenshot of the application running against a load test with locust.
-
-There is a locustfile.py file in the repo that is a working example of the load test script specified in the instructions.
-Deploy an application using Azure Pipelines into Azure App Services.
-
-The README contains screenshots of the project deployed into an Azure Azure App Service via Azure Pipelines. This should include:
-A screenshot of Azure Azure App Service
-A screenshot of a successful prediction in Azure Cloud Shell
-
-
-Use the Azure CLI to deploy and manage an application.
-The GitHub repo contains Azure CLI commands in a Bash script called commands.sh, including az webapp up -n <your-appservice>
-
-
-Test an application inside of Azure Pipelines
-The README contains a screenshot of a successful run of the project in Azure Pipelines.
-
-
-
 
 Provision the target Azure App Service
+
+
 The quickest way to create an App Service instance is to use the Azure command-line interface (CLI) through the interactive Azure Cloud Shell. In the following steps, you use az webapp up to both provision the App Service and perform the first deployment of your app.
 1.	Sign in to the Azure portal at https://portal.azure.com.
 2.	Open the Azure CLI by selecting the Cloud Shell button on the portal's toolbar:
  
+ ![image](https://user-images.githubusercontent.com/54340800/141046170-3571dfc3-4028-4662-bb8b-b6f35daed5d1.png)
+
+
+
+
+
 3.	The Cloud Shell appears along the bottom of the browser. Select Bash from the dropdown:
+
+![Screen Shot 2021-11-09 at 9 47 16 PM](https://user-images.githubusercontent.com/54340800/141046309-72e064fd-e2bc-4740-beb4-2fe39a01eb46.png)
+
  
 4.	In the Cloud Shell, clone your repository using git clone. For the example app, use:
 BashCopy
-git clone https://github.com/<your-alias>/python-sample-vscode-flask-tutorial
+git clone git@github.com:enam1977/udacity_project_2_part2.git
+
 Replace <your-alias> with the name of the GitHub account you used to fork the repository.
  Tip
 To paste into the Cloud Shell, use Ctrl+Shift+V, or right-click and select Paste from the context menu.
