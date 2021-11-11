@@ -379,11 +379,11 @@ Run the following command to create the App Service instance in the plan, replac
   
 The App Service at this point contains only default app code. You can now use Azure Pipelines to deploy your specific app code.
   
-  ![image](https://user-images.githubusercontent.com/54340800/141013786-153bedae-f78e-4b87-b801-483e9b649eb4.png)
 
 
 * Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
+
+  The output should look similar to this:
 
 ![Make_prediction](https://user-images.githubusercontent.com/54340800/140670530-4fc67988-0af9-45ff-972e-8bcd2cd4df1b.png)
 
@@ -391,7 +391,50 @@ The output should look similar to this:
 * Output of streamed log files from deployed application
 
 ![Logfiles](https://user-images.githubusercontent.com/54340800/140670926-581c3912-2b9e-456c-b437-74245004e364.png)
+  
+  * Load test by locust
+  
+  Created a file named locustfile.py in the repo.
+  
+  Paste below code to run
+  
+  from locust import HttpUser, TaskSet, task,constant,SequentialTaskSet
 
+class MyReqRes(SequentialTaskSet):
+    
+    @task(2)
+    def get_user(self):
+        res=self.client.get("/")
+        print("get Method status is", res.status.code)
+    
+    @task(2)
+    def post_status(self):
+        res=self.client.post("/?status=success")
+        print("Post method status is", res.status.code)
+    
+class MyseqTest(HttpUser):
+    wait_time=constant(3)
+    host="https://flask-azure-project2.azurewebsites.net/"
+    tasks=[MyReqRes]
+  
+  
+ Run this command in Azure CLI
+  
+  locust -f locustio.py --headless -u 200 -r 10 --run-time 1h  
+-u specifies the number of Users to spawn. -r specifies the spawn rate (number of users to start per second). If you want to specify the run time for a test, you can do that with --run-time or -t
+  
+  You can also run locust with head/UI.
+
+locust -f locustio.py
+Then go to Locust’s web interface
+
+Once you’ve started Locust, you should open up a browser and point it to http://0.0.0.0:8089. Then you should be greeted with something like this: 
+  
+![Screen Shot 2021-11-10 at 8 26 25 PM](https://user-images.githubusercontent.com/54340800/141226374-8c782029-db95-43c5-9d58-ae7ff7fe8e9d.png)
+
+Result of the locust
+  
+  ![Screen Shot 2021-11-10 at 8 34 33 PM](https://user-images.githubusercontent.com/54340800/141227139-bbbc0d54-497b-4243-bdd1-eb3faadd130d.png)
 
 ## Enhancements
 
