@@ -128,9 +128,12 @@ Clone github repo to local drive in the virtual environment
   <img width="960" alt="clone file" src="https://user-images.githubusercontent.com/54340800/140678660-f50581e7-1b23-4a8a-b6bb-cafeee2fc38a.png">
 
 
+
 # Passing tests that are displayed after running the `make all` command from the `Makefile`
 
 ![Make_all](https://user-images.githubusercontent.com/54340800/140670388-7e6fc89e-bf29-41cf-be53-07b2d3bd70db.png)
+
+
 
 
 # Continious Intrigation: Configure GitHub Actions
