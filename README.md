@@ -47,7 +47,7 @@ Launch the azure shell environment ,create ssh-keys and upload the Github
 
 * In order to using the Azure CLI is by using the cloud shell component which can be accessed after logging in to the Azure portal. Once you are logged in to Azure, click on the command button available on the top of the portal.
 
-* Azure Cloud Shell
+* Click the highlighted box to open the Azure Cloud Shell as shown in the image below
 
 <img width="960" alt="Powershell" src="https://user-images.githubusercontent.com/54340800/140675349-ad2fae62-98e1-4c2c-9c49-c07f307fe519.png">
 
