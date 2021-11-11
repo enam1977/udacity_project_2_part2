@@ -123,13 +123,9 @@ Clone github repo to local drive in the virtual environment
 
 * Put the below commands to get the repo to local drive and as shown in the image.
  
-  git clone git@github.com:enam1977/udacity_project_2_part1.git
+  git clone git@github.com:enam1977/udacity_project_2_part1.git and image shows below file has been copied in the shell.
 
   <img width="960" alt="clone file" src="https://user-images.githubusercontent.com/54340800/140678660-f50581e7-1b23-4a8a-b6bb-cafeee2fc38a.png">
-
-* Cloud Shell
-
-  ![project clone](https://user-images.githubusercontent.com/54340800/140670440-6943090e-a5cb-494f-bd6d-6d83da329551.png)
 
 
 # Passing tests that are displayed after running the `make all` command from the `Makefile`
