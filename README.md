@@ -203,11 +203,10 @@ jobs:
 
 
 
-
-
 <img width="879" alt="github action" src="https://user-images.githubusercontent.com/54340800/140848805-d567d75e-94da-4b60-a816-592da0f31dc9.png">
     
-    ![Screen Shot 2021-11-10 at 8 55 27 PM](https://user-images.githubusercontent.com/54340800/141229219-c971cd90-d504-4cf9-a799-83b46096feb5.png)
+    
+![Screen Shot 2021-11-10 at 8 55 27 PM](https://user-images.githubusercontent.com/54340800/141229219-c971cd90-d504-4cf9-a799-83b46096feb5.png)
 
     
 
@@ -218,8 +217,6 @@ jobs:
 * Running Azure App Service from Azure Pipelines automatic deployment
 
 
-
-
 Provision the target Azure App Service
 
 
@@ -228,10 +225,6 @@ The quickest way to create an App Service instance is to use the Azure command-l
 2.	Open the Azure CLI by selecting the Cloud Shell button on the portal's toolbar:
  
  ![image](https://user-images.githubusercontent.com/54340800/141046170-3571dfc3-4028-4662-bb8b-b6f35daed5d1.png)
-
-
-
-
 
 3.	The Cloud Shell appears along the bottom of the browser. Select Bash from the dropdown:
 
