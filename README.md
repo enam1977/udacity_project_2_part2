@@ -152,13 +152,12 @@ Enable Github Actions
 * Replace the pythonapp.yml code with the following scaffolding code.
 
 
+name: Python application test with Github Actions
 
-  name: Python application test with Github Actions
+on: [push]
 
-  on: [push]
-
-  jobs:
-    build:
+jobs:
+  build:
 
     runs-on: ubuntu-latest
 
@@ -184,73 +183,70 @@ Enable Github Actions
     
   
     
-    * This is the next step after putting yml code and save. here you can see whether your code is successful or not.
-    
-    ![Screen Shot 2021-11-10 at 8 55 27 PM](https://user-images.githubusercontent.com/54340800/141229219-c971cd90-d504-4cf9-a799-83b46096feb5.png)
 
    
+* This is the next step after putting yml code and save. here you can see whether your code is successful or not.
+    
+![Screen Shot 2021-11-10 at 8 55 27 PM](https://user-images.githubusercontent.com/54340800/141229219-c971cd90-d504-4cf9-a799-83b46096feb5.png)
 
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD].
 
-* Running Azure App Service from Azure Pipelines automatic deployment
-
+# deploy of the project in Azure Pipelines. 
 
 Provision the target Azure App Service
 
-
 The quickest way to create an App Service instance is to use the Azure command-line interface (CLI) through the interactive Azure Cloud Shell. In the following steps, you use az webapp up to both provision the App Service and perform the first deployment of your app.
-1.	Sign in to the Azure portal at https://portal.azure.com.
-2.	Open the Azure CLI by selecting the Cloud Shell button on the portal's toolbar:
+
+* Sign in to the Azure portal at https://portal.azure.com.
+* Open the Azure CLI by selecting the Cloud Shell button on the portal's toolbar:
  
  ![image](https://user-images.githubusercontent.com/54340800/141046170-3571dfc3-4028-4662-bb8b-b6f35daed5d1.png)
 
-3.	The Cloud Shell appears along the bottom of the browser. Select Bash from the dropdown:
+* The Cloud Shell appears along the bottom of the browser. Select Bash from the dropdown:
 
 ![Screen Shot 2021-11-09 at 9 47 16 PM](https://user-images.githubusercontent.com/54340800/141046309-72e064fd-e2bc-4740-beb4-2fe39a01eb46.png)
 
  
-4.	In the Cloud Shell, clone your repository using git clone. For the example app, use:
+* In the Cloud Shell, clone your repository using git clone. For the example app, use:
 
   git clone git@github.com:enam1977/udacity_project_2_part2.git
 
 
-5.	In the Cloud Shell, change directories into the repository folder that has your Python app, so the az webapp up command will recognize the app as Python.
+* In the Cloud Shell, change directories into the repository folder that has your Python app, so the az webapp up command will recognize the app as Python.
 
   cd udacity_project_2_part2
   
-6.	In the Cloud Shell, use az webapp up to create an App Service and initially deploy your app.
+* In the Cloud Shell, use az webapp up to create an App Service and initially deploy your app.
 
-  
   az webapp up -n flask-azure-project2 (In your case app service name will be wahtever you provide)
   
-  Change <your-appservice> to a name for your app service that's unique across Azure. Typically, you use a personal or company name along with an app identifier,   such as <your-name>-flaskpipelines. The app URL becomes <your-appservice>.azurewebsites.net.
+* Change <your-appservice> to a name for your app service that's unique across Azure. Typically, you use a personal or company name along with an app identifier,   such as <your-name>-flaskpipelines. The app URL becomes <your-appservice>.azurewebsites.net.
 
-7.	If your app uses a custom startup command, set the az webapp config property. 
+* If your app uses a custom startup command, set the az webapp config property. 
   
   az webapp config set -g <your-resource-group> -n <your-appservice> --startup-file <your-startup-file-or-command>
 
-8.	To see the running app, open a browser and go to http://flask-azure-project2.azurewebsites.net. If you see a generic page, wait a few seconds for the App Service to start, and refresh the page.
+* To see the running app, open a browser and go to http://flask-azure-project2.azurewebsites.net. If you see a generic page, wait a few seconds for the App Service to start, and refresh the page.
 
 Create an Azure DevOps project and connect to Azure
   
 To deploy to Azure App Service from Azure Pipelines, you need to establish a service connection between the two services.
   
-1.	In a browser, go to dev.azure.com. If you don't yet have an account on Azure DevOps, select Start free and get a free account. If you have an account already, select Sign in to Azure DevOps.
+* In a browser, go to dev.azure.com. If you don't yet have an account on Azure DevOps, select Start free and get a free account. If you have an account already, select Sign in to Azure DevOps.
  
 
-2.	Once you sign in, the browser displays your Azure DevOps dashboard, at the URL https://dev.azure.com/<your-organization-name>. An Azure DevOps account can belong to one or more organizations, which are listed on the left side of the Azure DevOps dashboard. If more than one organization is listed, select the one you want to use for this walkthrough. By default, Azure DevOps creates a new organization using the email alias you used to sign in.
+* Once you sign in, the browser displays your Azure DevOps dashboard, at the URL https://dev.azure.com/<your-organization-name>. An Azure DevOps account can belong to one or more organizations, which are listed on the left side of the Azure DevOps dashboard. If more than one organization is listed, select the one you want to use for this walkthrough. By default, Azure DevOps creates a new organization using the email alias you used to sign in.
 
-  A project is a grouping for boards, repositories, pipelines, and other aspects of Azure DevOps. If your organization doesn't have any projects, enter the project name Flask Pipelines under Create a project to get started, and then select Create project.
+* A project is a grouping for boards, repositories, pipelines, and other aspects of Azure DevOps. If your organization doesn't have any projects, enter the project name Flask Pipelines under Create a project to get started, and then select Create project.
  
-If your organization already has projects, select New project on the organization page. In the Create new project dialog box, enter the project name and select Create.
+* If your organization already has projects, select New project on the organization page. In the Create new project dialog box, enter the project name and select Create.
   
   <img width="394" alt="Screen Shot 2021-11-10 at 7 00 46 PM" src="https://user-images.githubusercontent.com/54340800/141218075-ae41640e-8bb0-4d45-bd98-8821e58890de.png">
 
-3.	From the new project page, select Project settings from the left navigation.
+* From the new project page, select Project settings from the left navigation.
   
  <img width="626" alt="Screen Shot 2021-11-10 at 7 03 05 PM" src="https://user-images.githubusercontent.com/54340800/141218302-530bd532-e816-48ef-868a-3888322bf87b.png">
 
-4.	On the Project Settings page, select Pipelines > Service connections, then select New service connection, and then select Azure Resource Manager from the dropdown.
+* On the Project Settings page, select Pipelines > Service connections, then select New service connection, and then select Azure Resource Manager from the dropdown.
  
   <img width="664" alt="Screen Shot 2021-11-10 at 7 04 21 PM" src="https://user-images.githubusercontent.com/54340800/141218358-0d563a99-1100-4c6a-84e1-ce02a94fb875.png">
 
