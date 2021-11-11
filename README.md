@@ -378,10 +378,8 @@ Run the following command to create the App Service instance in the plan, replac
   az webapp config set -g <your-resource-group> -n <your-appservice> --startup-file <your-startup-command-or-file>
   
 The App Service at this point contains only default app code. You can now use Azure Pipelines to deploy your specific app code.
-
   
-
-![image](https://user-images.githubusercontent.com/54340800/141013786-153bedae-f78e-4b87-b801-483e9b649eb4.png)
+  ![image](https://user-images.githubusercontent.com/54340800/141013786-153bedae-f78e-4b87-b801-483e9b649eb4.png)
 
 
 * Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
