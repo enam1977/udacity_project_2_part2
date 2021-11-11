@@ -389,17 +389,18 @@ class MyseqTest(HttpUser):
   
  Run this command in Azure CLI
   
-  locust -f locustio.py --headless -u 200 -r 10 --run-time 1h  
--u specifies the number of Users to spawn. -r specifies the spawn rate (number of users to start per second). If you want to specify the run time for a test, you can do that with --run-time or -t
+  locust -f locustio.py --headless -u 200 -r 10 --run-time 1h 
+  
+  -u specifies the number of Users to spawn. -r specifies the spawn rate (number of users to start per second). If you want to specify the run time for a test,     you can do that with --run-time or -t
   
   You can also run locust with head/UI.
 
-locust -f locustio.py
-Then go to Locust’s web interface
+  locust -f locustio.py
+  Then go to Locust’s web interface
 
-Once you’ve started Locust, you should open up a browser and point it to http://0.0.0.0:8089. Then you should be greeted with something like this: 
+  Once you’ve started Locust, you should open up a browser and point it to http://0.0.0.0:8089. Then you should be greeted with something like this: 
   
-![Screen Shot 2021-11-10 at 8 26 25 PM](https://user-images.githubusercontent.com/54340800/141226374-8c782029-db95-43c5-9d58-ae7ff7fe8e9d.png)
+  ![Screen Shot 2021-11-10 at 8 26 25 PM](https://user-images.githubusercontent.com/54340800/141226374-8c782029-db95-43c5-9d58-ae7ff7fe8e9d.png)
 
 Result of the locust
   
@@ -418,19 +419,21 @@ There are a lots of ways project can be inproved in future. We have done a very 
 
 ## Demo 
   
-
-Screencast is 1-5 minutes in length
-Audio is clear
-Video is 1080P or higher and text visible
-The screencast shows the entire process of the working application, including a demonstration of:
-
-Working Azure Cloud Shell environment for Continuous Integration
-Working GitHub Actions build
-Successful deployment using Continuous Delivery on the Azure platform.
-Successful machine learning prediction that returns back a JSON payload
-
-
-<TODO: Add link Screencast on YouTube>
+ # Setup Azure Cloud shell
+  
+  https://youtu.be/J_RS9Ti9Wgo
+  
+ # Make command to check the Makefile passed
+  
+  https://youtu.be/TpChVwfO5d0
+ 
+ # Github Action
+  
+  https://youtu.be/x6WnAjmQgVU
+  
+ # Azure_Pipeline_Continious_Delivery
+  
+  https://youtu.be/tpZ1EsW3qX
 
 
  # References
