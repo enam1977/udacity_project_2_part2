@@ -433,7 +433,13 @@ Result of the locust
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+There are a lots of ways project can be inproved in future. We have done a very small part of the project
+  
+  1. Add more code to build a compplete website.
+  2. Enhance security of the project. Access control
+  scale out and scale up app service plan.
+  can artifacts and test plan.
+  
 
 ## Demo 
   
@@ -452,3 +458,22 @@ Successful machine learning prediction that returns back a JSON payload
 <TODO: Add link Screencast on YouTube>
 
 
+ # References
+  
+  https://www.sqlshack.com/getting-started-with-azure-cli-2-0/
+  https://cli.github.com/manual/gh_repo_create
+  https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line
+  https://www.git-tower.com/learn/git/faq/git-create-repository
+  https://docs.github.com/en/get-started/quickstart/create-a-repo
+  https://www.atlassian.com/git/tutorials/setting-up-a-repository
+  https://click.palletsprojects.com/en/7.x/
+  https://docs.pytest.org/en/stable/
+  https://pypi.org/project/pytest-cov/
+  https://pypi.org/project/nbval/
+  https://github.com/paiml/testing-in-python
+  https://circleci.com/blog/increase-reliability-in-data-science-and-machine-learning-projects-with-circleci/
+  https://docs.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=bash&pivots=python-framework-flask
+  https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops&viewFallbackFrom=azure-devops%3FWT.mc_id%3Dudacity_learn-wwl
+  https://docs.microsoft.com/en-us/azure/devops-project/azure-devops-project-python?WT.mc_id=udacity_learn-wwl
+  https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python?view=azure-devops#run-lint-tests-with-flake8?WT.mc_id=udacity_learn-wwl
+  https://docs.microsoft.com/en-us/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml
