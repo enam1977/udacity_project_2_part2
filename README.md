@@ -129,7 +129,7 @@ Clone github repo to local drive in the virtual environment
 
 
 
-# Passing tests that are displayed after running the `make all` command from the `Makefile`
+* Passing tests that are displayed after running the `make all` command from the `Makefile`
 
 ![Make_all](https://user-images.githubusercontent.com/54340800/140670388-7e6fc89e-bf29-41cf-be53-07b2d3bd70db.png)
 
@@ -137,6 +137,8 @@ Clone github repo to local drive in the virtual environment
 
 
 # Continious Intrigation: Configure GitHub Actions
+
+below image shows the flowchart of continious intrigation.
 
 ![Screen Shot 2021-11-08 at 4 47 06 PM](https://user-images.githubusercontent.com/54340800/140831727-daf829b0-38d1-4b43-b7ae-5c7bee27ade1.png)
 
