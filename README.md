@@ -11,7 +11,7 @@ https://trello.com/b/JBlYiBbd/to-do
 * A link to a spreadsheet that includes the original and final project plan>
 https://docs.google.com/spreadsheets/d/1YjrBt-l6RQC9xPeYgFklU0uK3osKhnzwvnNehwnNigc/edit?usp=sharing
 
-#Azure DevOps Principles and Practices
+## Azure DevOps Principles and Practices
 
 Devops Definition
 
@@ -27,147 +27,118 @@ DevOps practices
 * Configuration management
 * Continuous monitoring
 
-
-
-
-Instructions for running the Python project
-A short description of how to improve the project in the future
-Screenshots demonstrating key steps
-
-
-
-## Instructions
-
-<TODO:  
 * Architectural Diagram (Shows how key parts of the system work)>
 
-
-Architectural Diagram
+  Architectural Diagram
 
 ![Screen Shot 2021-11-07 at 11 25 24 AM](https://user-images.githubusercontent.com/54340800/140655153-45fc6034-3070-4ea8-bd2f-993373f6d444.png)
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+## Project running on Azure App Service
 
-* Project running on Azure App Service
+How to Project cloned into Azure Cloud Shell
 
-* Project cloned into Azure Cloud Shell
-
-https://github.com/
+*  Go the link https://github.com/
 
 <img width="890" alt="How to create a repo" src="https://user-images.githubusercontent.com/54340800/140673822-e67eebf8-2343-4c09-a194-5448d1618540.png">
 
-There are some other ways you can create the repo and upload the exsitng repo in the github. Here is the link for more info
+* There are some other ways you can create the repo and upload the exsitng repo in the github. Here is the link for more info
 
 https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line
 
-Launch the azure shell environment ,create ssh-keys and upload the Github
+* Launch the azure shell environment ,create ssh-keys and upload the Github
 
-Another method of using the Azure CLI is by using the cloud shell component which can be accessed after logging in to the Azure portal. Once you are logged in to Azure, click on the command button available on the top of the portal.
+* Another method of using the Azure CLI is by using the cloud shell component which can be accessed after logging in to the Azure portal. Once you are logged in to Azure, click on the command button available on the top of the portal.
 
-Azure Cloud Shell
+* Azure Cloud Shell
 <img width="960" alt="Powershell" src="https://user-images.githubusercontent.com/54340800/140675349-ad2fae62-98e1-4c2c-9c49-c07f307fe519.png">
 
+* A new popup window appears at the bottom of the portal where you will be provided with two options to start with the cloud shell – Bash and PowerShell. For the sake of this article, I’m going ahead with the PowerShell. You can also choose to continue with the Bash option.
 
-
-A new popup window appears at the bottom of the portal where you will be provided with two options to start with the cloud shell – Bash and PowerShell. For the sake of this article, I’m going ahead with the PowerShell. You can also choose to continue with the Bash option.
-
-Select PowerShell
+* Select PowerShell
 
 ![Screen Shot 2021-11-10 at 8 52 53 PM](https://user-images.githubusercontent.com/54340800/141228984-d601f190-7039-4c6f-acec-c802b844fe59.png)
 
 
-
 Once you click on the PowerShell, the next step will be to select the Subscription to proceed ahead. If you dont have any storage account you need to create a simple Storage Account here in order to store the cloud shell scripts to be stored and executed. Go ahead and click on Create Storage. It might take some time to create the necessary storage requirements.
 
-Create Storage Account
+* Create Storage Account
 
 if you have already storage account you will ge the azure shell like this
 
 ![azure_shell](https://user-images.githubusercontent.com/54340800/140675981-a30f2949-92a5-47f8-ba31-bb51eb11f188.JPG)
 
-In order to create virtual environment you have pu the following command
-python3 -m venv env(this is name of the vistual environment)
+* In order to create virtual environment you have pu the following command
+  python3 -m venv env(this is name of the vistual environment)
 
-Activate the virtual environment by putting
-source .env/bin/activate
-![Virtual env](https://user-images.githubusercontent.com/54340800/140676349-f5d2862f-0909-4163-b13d-b4e0a5ae7cd4.JPG)
+* Activate the virtual environment by putting
+  source .env/bin/activate
+  
+  ![Virtual env](https://user-images.githubusercontent.com/54340800/140676349-f5d2862f-0909-4163-b13d-b4e0a5ae7cd4.JPG)
 
-Now need to creat ssh-keys to put in the github. 
+* Now need to create ssh-keys to put in the github. 
 
-<img width="890" alt="SSH-keys" src="https://user-images.githubusercontent.com/54340800/140676773-c81ae2da-1bc9-4990-8a88-f802d600c190.png">
+  <img width="890" alt="SSH-keys" src="https://user-images.githubusercontent.com/54340800/140676773-c81ae2da-1bc9-4990-8a88-f802d600c190.png">
 
-Enter ls -al ~/.ssh to see if existing SSH keys are present.
+* Enter ls -al ~/.ssh to see if existing SSH keys are present.
 
-Generating a new SSH key and adding it to the ssh-agent
+* Generating a new SSH key and adding it to the ssh-agent
 
-Paste the text below, substituting in your GitHub email address.
+* Paste the text below, substituting in your GitHub email address.
 
-$ ssh-keygen -t ed25519 -C "your_email@example.com"
+   ssh-keygen -t ed25519 -C "your_email@example.com"
 
-When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
+* When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
 
-> Enter a file in which to save the key (/c/Users/you/.ssh/id_algorithm):[Pr
+* At the prompt, type a secure passphrase. It will come twice. if you dont want to put any passphrase. Press enter.
 
-At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases."
+  Ensure the ssh-agent is running. You can use the "Auto-launching the ssh-agent" instructions in "Working with SSH key passphrases", or start it manually:
 
-> Enter passphrase (empty for no passphrase): [Type a passphrase]
-> Enter same passphrase again: [Type passphrase again]
+* start the ssh-agent in the background
 
-Ensure the ssh-agent is running. You can use the "Auto-launching the ssh-agent" instructions in "Working with SSH key passphrases", or start it manually:
-
-# start the ssh-agent in the background
-
-
-$ eval "$(ssh-agent -s)"
-
+  $ eval "$(ssh-agent -s)"
 
 Add your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_ed25519 in the command with the name of your private key file.
 
-$ ssh-add ~/.ssh/id_ed25519
+  $ ssh-add ~/.ssh/id_ed25519
 
-Adding a new SSH key to your GitHub account
+# Adding a new SSH key to your GitHub account
 
-Copy the SSH public key to your clipboard.
+* Copy the SSH public key to your clipboard.
 
 If your SSH public key file has a different name than the example code, modify the filename to match your current setup. When copying your key, don't add any newlines or whitespace.
 
-$ pbcopy < ~/.ssh/id_ed25519.pub
-<img width="890" alt="SSH-keys_paste" src="https://user-images.githubusercontent.com/54340800/140677693-0ce291fd-ee5c-4ab6-bc14-d6589def1967.png">
+  pbcopy < ~/.ssh/id_ed25519.pub
+  
+  <img width="890" alt="SSH-keys_paste" src="https://user-images.githubusercontent.com/54340800/140677693-0ce291fd-ee5c-4ab6-bc14-d6589def1967.png">
+
+# Clone github repo to local drive in the virtual environment
+
+* Get the code link from the repo shown below and 
+
+  <img width="774" alt="Clone" src="https://user-images.githubusercontent.com/54340800/140678312-4721ee7d-35c8-49ad-9a76-7244cf36a670.png">
+
+* Put the below commands to get the repo to local drive
+ 
+  git clone git@github.com:enam1977/udacity_project_2_part1.git
+
+  <img width="960" alt="clone file" src="https://user-images.githubusercontent.com/54340800/140678660-f50581e7-1b23-4a8a-b6bb-cafeee2fc38a.png">
+
+* Cloud Shell
+
+  ![project clone](https://user-images.githubusercontent.com/54340800/140670440-6943090e-a5cb-494f-bd6d-6d83da329551.png)
 
 
-NOw you have to clone github repo to local drive in the virtual environment
+# Passing tests that are displayed after running the `make all` command from the `Makefile`
 
-1. Get the code link from the repo
-
-<img width="774" alt="Clone" src="https://user-images.githubusercontent.com/54340800/140678312-4721ee7d-35c8-49ad-9a76-7244cf36a670.png">
-
-in the azure shell put the below commands to get the repo to local drive
-
-git clone git@github.com:enam1977/udacity_project_2_part1.git
-
-<img width="960" alt="clone file" src="https://user-images.githubusercontent.com/54340800/140678660-f50581e7-1b23-4a8a-b6bb-cafeee2fc38a.png">
-
-
-
-Cloud Shell
-
-![project clone](https://user-images.githubusercontent.com/54340800/140670440-6943090e-a5cb-494f-bd6d-6d83da329551.png)
-
-
-
-
-
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
-*
 ![Make_all](https://user-images.githubusercontent.com/54340800/140670388-7e6fc89e-bf29-41cf-be53-07b2d3bd70db.png)
 
-* Output of a test run
 
-Continious Intrigation: Configure GitHub Actions
+# Continious Intrigation: Configure GitHub Actions
 
 ![Screen Shot 2021-11-08 at 4 47 06 PM](https://user-images.githubusercontent.com/54340800/140831727-daf829b0-38d1-4b43-b7ae-5c7bee27ade1.png)
 
 Enable Github Actions
+
 Go to your Github Account and enable Github Actions.
 
 2. Replace yml code
