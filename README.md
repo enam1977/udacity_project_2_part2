@@ -37,15 +37,13 @@ DevOps practices
 
 How to Project cloned into Azure Cloud Shell
 
-*  Go the link https://github.com/
+*  Go the link https://github.com/ and follow the instructions in the image below to create a repo.
 
 <img width="890" alt="How to create a repo" src="https://user-images.githubusercontent.com/54340800/140673822-e67eebf8-2343-4c09-a194-5448d1618540.png">
 
-* There are some other ways you can create the repo and upload the exsitng repo in the github. Here is the link for more info
+ There are some other ways you can create the repo and upload the exsitng repo in the github. Please check the reference section to get more details.
 
-https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line
-
-* Launch the azure shell environment ,create ssh-keys and upload the Github
+# Launch the azure shell environment ,create ssh-keys and upload the Github
 
 * Another method of using the Azure CLI is by using the cloud shell component which can be accessed after logging in to the Azure portal. Once you are logged in to Azure, click on the command button available on the top of the portal.
 
@@ -449,3 +447,4 @@ Successful machine learning prediction that returns back a JSON payload
   https://docs.microsoft.com/en-us/azure/devops-project/azure-devops-project-python?WT.mc_id=udacity_learn-wwl
   https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python?view=azure-devops#run-lint-tests-with-flake8?WT.mc_id=udacity_learn-wwl
   https://docs.microsoft.com/en-us/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml
+  
