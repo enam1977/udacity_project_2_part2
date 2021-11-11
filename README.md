@@ -145,9 +145,12 @@ below image shows the flowchart of continious intrigation.
 
 Enable Github Actions
 
-* Go to your Github Account and enable Github Actions.
+* Go to your Github Account and enable Github Actions as shown in the image below.
+
+<img width="879" alt="github action" src="https://user-images.githubusercontent.com/54340800/140848805-d567d75e-94da-4b60-a816-592da0f31dc9.png">
 
 * Replace the pythonapp.yml code with the following scaffolding code.
+
 
   name: Python application test with Github Actions
 
@@ -175,18 +178,11 @@ Enable Github Actions
         make test
         
     
-    
-
-
-
-<img width="879" alt="github action" src="https://user-images.githubusercontent.com/54340800/140848805-d567d75e-94da-4b60-a816-592da0f31dc9.png">
-    
+   * This is the next step after putting yml code and save. here you can see whether your code is successful or not.
     
 ![Screen Shot 2021-11-10 at 8 55 27 PM](https://user-images.githubusercontent.com/54340800/141229219-c971cd90-d504-4cf9-a799-83b46096feb5.png)
 
-    
-
-
+   
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
