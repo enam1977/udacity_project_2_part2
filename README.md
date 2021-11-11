@@ -74,11 +74,11 @@ if you have already storage account you will ge the azure shell like this
 
     source .env/bin/activate
   
-  ![Virtual env](https://user-images.githubusercontent.com/54340800/140676349-f5d2862f-0909-4163-b13d-b4e0a5ae7cd4.JPG)
+ ![Virtual env](https://user-images.githubusercontent.com/54340800/140676349-f5d2862f-0909-4163-b13d-b4e0a5ae7cd4.JPG)
 
 * Now need to create ssh-keys to put in the github. 
 
-  <img width="890" alt="SSH-keys" src="https://user-images.githubusercontent.com/54340800/140676773-c81ae2da-1bc9-4990-8a88-f802d600c190.png">
+ <img width="890" alt="SSH-keys" src="https://user-images.githubusercontent.com/54340800/140676773-c81ae2da-1bc9-4990-8a88-f802d600c190.png">
 
 * Enter ls -al ~/.ssh to see if existing SSH keys are present.
 
@@ -98,7 +98,7 @@ if you have already storage account you will ge the azure shell like this
 
   $ eval "$(ssh-agent -s)"
 
-Add your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_ed25519 in the command with the name of your private key file.
+  Add your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name,         replace id_ed25519 in the command with the name of your private key file.
 
   $ ssh-add ~/.ssh/id_ed25519
 
@@ -107,11 +107,13 @@ Adding a new SSH key to your GitHub account
 
 * Copy the SSH public key to your clipboard.
 
-If your SSH public key file has a different name than the example code, modify the filename to match your current setup. When copying your key, don't add any newlines or whitespace.
+  If your SSH public key file has a different name than the example code, modify the filename to match your current setup. When copying your key, don't add any     newlines or whitespace.
 
   pbcopy < ~/.ssh/id_ed25519.pub
+ 
+ * Paste the SSH keys in the Github by following the below instruction in the image
   
-  <img width="890" alt="SSH-keys_paste" src="https://user-images.githubusercontent.com/54340800/140677693-0ce291fd-ee5c-4ab6-bc14-d6589def1967.png">
+ <img width="890" alt="SSH-keys_paste" src="https://user-images.githubusercontent.com/54340800/140677693-0ce291fd-ee5c-4ab6-bc14-d6589def1967.png">
 
 Clone github repo to local drive in the virtual environment
 
@@ -119,7 +121,7 @@ Clone github repo to local drive in the virtual environment
 
   <img width="774" alt="Clone" src="https://user-images.githubusercontent.com/54340800/140678312-4721ee7d-35c8-49ad-9a76-7244cf36a670.png">
 
-* Put the below commands to get the repo to local drive
+* Put the below commands to get the repo to local drive and as shown in the image.
  
   git clone git@github.com:enam1977/udacity_project_2_part1.git
 
