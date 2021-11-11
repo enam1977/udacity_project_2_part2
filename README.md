@@ -43,11 +43,12 @@ How to Project cloned into Azure Cloud Shell
 
  There are some other ways you can create the repo and upload the exsitng repo in the github. Please check the reference section to get more details.
 
-# Launch the azure shell environment ,create ssh-keys and upload the Github
+Launch the azure shell environment ,create ssh-keys and upload the Github
 
-* Another method of using the Azure CLI is by using the cloud shell component which can be accessed after logging in to the Azure portal. Once you are logged in to Azure, click on the command button available on the top of the portal.
+* In order to using the Azure CLI is by using the cloud shell component which can be accessed after logging in to the Azure portal. Once you are logged in to Azure, click on the command button available on the top of the portal.
 
 * Azure Cloud Shell
+
 <img width="960" alt="Powershell" src="https://user-images.githubusercontent.com/54340800/140675349-ad2fae62-98e1-4c2c-9c49-c07f307fe519.png">
 
 * A new popup window appears at the bottom of the portal where you will be provided with two options to start with the cloud shell – Bash and PowerShell. For the sake of this article, I’m going ahead with the PowerShell. You can also choose to continue with the Bash option.
@@ -66,10 +67,12 @@ if you have already storage account you will ge the azure shell like this
 ![azure_shell](https://user-images.githubusercontent.com/54340800/140675981-a30f2949-92a5-47f8-ba31-bb51eb11f188.JPG)
 
 * In order to create virtual environment you have pu the following command
-  python3 -m venv env(this is name of the vistual environment)
+
+    python3 -m venv env(this is name of the vistual environment)
 
 * Activate the virtual environment by putting
-  source .env/bin/activate
+
+    source .env/bin/activate
   
   ![Virtual env](https://user-images.githubusercontent.com/54340800/140676349-f5d2862f-0909-4163-b13d-b4e0a5ae7cd4.JPG)
 
