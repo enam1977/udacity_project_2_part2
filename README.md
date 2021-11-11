@@ -68,14 +68,14 @@ Azure Cloud Shell
 <img width="960" alt="Powershell" src="https://user-images.githubusercontent.com/54340800/140675349-ad2fae62-98e1-4c2c-9c49-c07f307fe519.png">
 
 
-Figure 8 – Azure Cloud Shell
 
 A new popup window appears at the bottom of the portal where you will be provided with two options to start with the cloud shell – Bash and PowerShell. For the sake of this article, I’m going ahead with the PowerShell. You can also choose to continue with the Bash option.
 
 Select PowerShell
-![AZURESHELL](https://user-images.githubusercontent.com/54340800/140675110-a1ad1d11-2da8-4480-850c-0496e22d5ab0.png)
 
-Figure 9 – Select PowerShell
+![Screen Shot 2021-11-10 at 8 52 53 PM](https://user-images.githubusercontent.com/54340800/141228984-d601f190-7039-4c6f-acec-c802b844fe59.png)
+
+
 
 Once you click on the PowerShell, the next step will be to select the Subscription to proceed ahead. If you dont have any storage account you need to create a simple Storage Account here in order to store the cloud shell scripts to be stored and executed. Go ahead and click on Create Storage. It might take some time to create the necessary storage requirements.
 
