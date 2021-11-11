@@ -435,10 +435,11 @@ Result of the locust
 
 There are a lots of ways project can be inproved in future. We have done a very small part of the project
   
-  1. Add more code to build a compplete website.
+  1. Add codes to repo to test the webapp.
   2. Enhance security of the project. Access control
-  scale out and scale up app service plan.
-  can artifacts and test plan.
+  3. Scale out and Scale up app service plan.
+  4. can artifacts and add test plan.
+  5. Performace of the webapp
   
 
 ## Demo 
