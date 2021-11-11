@@ -251,12 +251,7 @@ To deploy to Azure App Service from Azure Pipelines, you need to establish a ser
   <img width="664" alt="Screen Shot 2021-11-10 at 7 04 21 PM" src="https://user-images.githubusercontent.com/54340800/141218358-0d563a99-1100-4c6a-84e1-ce02a94fb875.png">
 
   
-5.	In the Add an Azure Resource Manager service connection dialog box:
-1.	Give the connection a name. Make note of the name to use later in the pipeline.
-2.	For Scope level, select Subscription.
-3.	Select the subscription for your App Service from the Subscription drop-down list.
-4.	Under Resource Group, select your resource group from the dropdown.
-5.	Make sure the option Allow all pipelines to use this connection is selected, and then select OK.
+* In the Add an Azure Resource Manager service connection dialog box:Give the connection a name,select Subscription,Subscription drop-down list,select your resource group from the dropdown,select OK. Foloow the image
   
   <img width="673" alt="Screen Shot 2021-11-10 at 7 06 12 PM" src="https://user-images.githubusercontent.com/54340800/141218583-57dcc305-9baf-4813-afa0-88e8bdb48384.png">
 
