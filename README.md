@@ -260,30 +260,30 @@ To deploy to Azure App Service from Azure Pipelines, you need to establish a ser
 Create a Python-specific pipeline to deploy to App Service
   
   
-1.	From your project page left navigation, select Pipelines.
+* From your project page left navigation, select Pipelines.
   
   <img width="802" alt="Screen Shot 2021-11-10 at 7 15 08 PM" src="https://user-images.githubusercontent.com/54340800/141219368-a6e496d1-f7f8-443a-a665-af77decab9b2.png">
 
  
-2.	Select Create Pipeline:
+* Select Create Pipeline:
  <img width="783" alt="Screen Shot 2021-11-10 at 7 16 49 PM" src="https://user-images.githubusercontent.com/54340800/141219529-5f985f99-786d-4664-bcfd-ad9cb32f9eaa.png">
 
   
-3.	On the Where is your code screen, select GitHub. You may be prompted to sign into GitHub.
+* On the Where is your code screen, select GitHub. You may be prompted to sign into GitHub.
   
  <img width="791" alt="Screen Shot 2021-11-10 at 7 17 30 PM" src="https://user-images.githubusercontent.com/54340800/141219607-4f4eb87f-391d-4876-97f0-36c62606725a.png">
 
-4.	On the Select a repository screen, select the repository that contains your app, such as your fork of the example app.
+* On the Select a repository screen, select the repository that contains your app, such as your fork of the example app.
   
   <img width="457" alt="Screen Shot 2021-11-10 at 7 21 16 PM" src="https://user-images.githubusercontent.com/54340800/141219925-79f24eb5-938f-40aa-bb7c-b848ec0bce8c.png">
 
  
-5.	You may be prompted to enter your GitHub password again as a confirmation, and then GitHub prompts you to install the Azure Pipelines extension:
+* You may be prompted to enter your GitHub password again as a confirmation, and then GitHub prompts you to install the Azure Pipelines extension:
   
   <img width="862" alt="Screen Shot 2021-11-10 at 7 23 24 PM" src="https://user-images.githubusercontent.com/54340800/141220119-4032161f-d502-47f2-a376-b3348e6c752e.png">
 
 
-6.	On the Configure your pipeline screen, select Python to Linux Web App on Azure.
+* On the Configure your pipeline screen, select Python to Linux Web App on Azure.
 
 Azure Pipelines creates an azure-pipelines.yml file that defines your CI/CD pipeline as a series of stages, Jobs, and steps, where each step contains the details for different tasks and scripts. Take a look at the pipeline to see what it does. Make sure all the default inputs are appropriate for your code.
 
@@ -292,62 +292,47 @@ Azure Pipelines creates an azure-pipelines.yml file that defines your CI/CD pipe
 Run the pipeline
   
 You're now ready to try it out!
-1.	Select Save at upper right in the editor, and in the pop-up window, add a commit message and select Save.
-2.	Select Run on the pipeline editor, and select Run again in the Run pipeline dialog box. Azure Pipelines queues another pipeline run, acquires an available build agent, and has that build agent run the pipeline.
-The pipeline takes a few minutes to complete, especially the deployment steps. You should see green checkmarks next to each of the steps.
-If there's an error, you can quickly return to the YAML editor by selecting the vertical dots at upper right and selecting Edit pipeline:
+* Select Save at upper right in the editor, and in the pop-up window, add a commit message and select Save.
+* Select Run on the pipeline editor, and select Run again in the Run pipeline dialog box. Azure Pipelines queues another pipeline run, acquires an available       build agent, and has that build agent run the pipeline.The pipeline takes a few minutes to complete, especially the deployment steps. You should see green       checkmarks next to each of the steps.
+* If there's an error, you can quickly return to the YAML editor by selecting the vertical dots at upper right and selecting Edit pipeline:
   
   <img width="840" alt="Screen Shot 2021-11-10 at 7 41 09 PM" src="https://user-images.githubusercontent.com/54340800/141221811-2ac25d57-2548-41d1-bf2a-8c3fc5f3006d.png">
 
  
-3.	From the build page, select the Azure Web App task to display its output. To visit the deployed site, hold down the Ctrl key and select the URL after App Service Application URL.
-If you're using the Flask example, the app should appear as follows:
+* From the build page, select the Azure Web App task to display its output. To visit the deployed site, hold down the Ctrl key and select the URL after App Service Application URL.
  
 
-If your app fails because of a missing dependency, then your requirements.txt file was not processed during deployment. This behavior happens if you created the web app directly on the portal rather than using the az webapp up command as shown in this article.
-The az webapp up command specifically sets the build action SCM_DO_BUILD_DURING_DEPLOYMENT to true. If you provisioned the app service through the portal, however, this action is not automatically set.
-The following steps set the action:
-1.	Open the Azure portal, select your App Service, then select Configuration.
-2.	Under the Application Settings tab, select New Application Setting.
-3.	In the popup that appears, set Name to SCM_DO_BUILD_DURING_DEPLOYMENT, set Value to true, and select OK.
-4.	Select Save at the top of the Configuration page.
-5.	Run the pipeline again. Your dependencies should be installed during deployment.
-  
-  
   
 Provision an App Service with single commands
   
   
-The az webapp up command used earlier in this article is a convenient method to provision the App Service and initially deploy your app in a single step. If you want more control over the deployment process, you can use single commands to accomplish the same tasks. For example, you might want to use a specific name for the resource group, or create an App Service within an existing App Service Plan.
-The following steps perform the equivalent of the az webapp up command:
+  The az webapp up command used earlier in this article is a convenient method to provision the App Service and initially deploy your app in a single step. If     you want more control over the deployment process, you can use single commands to accomplish the same tasks. For example, you might want to use a specific name   for the resource group, or create an App Service within an existing App Service Plan.
+  The following steps perform the equivalent of the az webapp up command:
 
-  1.	Create a resource group.
-In the Cloud Shell, run the following command to create a resource group in your Azure subscription. Set a location for the resource group by specifying the value of <your-region>.
+  * Create a resource group.
+  In the Cloud Shell, run the following command to create a resource group in your Azure subscription. Set a location for the resource group by specifying the     value of <your-region>.
 
   az group create -l <your-region> -n <your-resource-group>
   
-2.	Create an App Service Plan.
-An App Service runs inside a VM defined by an App Service Plan. Run the following command to create an App Service Plan, substituting your own values for <your-resource-group> and <your-appservice-plan>. The --is-linux is required for Python deployments. If you want a pricing plan other than the default F1 Free plan, use the sku argument. The --sku B1 specifies the lower-price compute tier for the VM. You can easily delete the plan later by deleting the resource group.
+ * Create an App Service Plan.
+  An App Service runs inside a VM defined by an App Service Plan. Run the following command to create an App Service Plan, substituting your own values for         <your-resource-group> and <your-appservice-plan>. The --is-linux is required for Python deployments. If you want a pricing plan other than the default F1 Free   plan, use the sku argument. The --sku B1 specifies the lower-price compute tier for the VM. You can easily delete the plan later by deleting the resource         group.
 
   az appservice plan create -g <your-resource-group> -n <your-appservice-plan> --is-linux --sku B1
   
-3.	Create an App Service instance in the plan.
-Run the following command to create the App Service instance in the plan, replacing <your-appservice> with a name that's unique across Azure.
-  If you want to deploy your code at the same time you create the app service, you can use the --deployment-source-url and --deployment-source-branch arguments with the az webapp create command.
+* Create an App Service instance in the plan.
+  Run the following command to create the App Service instance in the plan, replacing <your-appservice> with a name that's unique across Azure.
+  If you want to deploy your code at the same time you create the app service, you can use the --deployment-source-url and --deployment-source-branch arguments     with the az webapp create command.
   
   az webapp create -g <your-resource-group> -p <your-appservice-plan> -n <your-appservice> --runtime "Python|3.6"
   
-4.	If your app requires a custom startup command, use the az webapp config set command, as described earlier in Provision the target Azure App Service. For example, to customize the App Service with your resource group, app name, and startup command, run:
+* If your app requires a custom startup command, use the az webapp config set command, as described earlier in Provision the target Azure App Service. For         example, to customize the App Service with your resource group, app name, and startup command, run:
 
   az webapp config set -g <your-resource-group> -n <your-appservice> --startup-file <your-startup-command-or-file>
   
-The App Service at this point contains only default app code. You can now use Azure Pipelines to deploy your specific app code.
+ The App Service at this point contains only default app code. You can now use Azure Pipelines to deploy your specific app code.
   
 
-
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-
-  The output should look similar to this:
+* Successful prediction from deployed flask app in Azure Cloud Shell. Below image shows the successfull prediction.
 
 ![Make_prediction](https://user-images.githubusercontent.com/54340800/140670530-4fc67988-0af9-45ff-972e-8bcd2cd4df1b.png)
 
@@ -356,7 +341,7 @@ The App Service at this point contains only default app code. You can now use Az
 
 ![Logfiles](https://user-images.githubusercontent.com/54340800/140670926-581c3912-2b9e-456c-b437-74245004e364.png)
   
-  * Load test by locust
+* Load test by locust
   
   Created a file named locustfile.py in the repo.
   
@@ -364,7 +349,7 @@ The App Service at this point contains only default app code. You can now use Az
   
   from locust import HttpUser, TaskSet, task,constant,SequentialTaskSet
 
-class MyReqRes(SequentialTaskSet):
+  class MyReqRes(SequentialTaskSet):
     
     @task(2)
     def get_user(self):
@@ -376,7 +361,7 @@ class MyReqRes(SequentialTaskSet):
         res=self.client.post("/?status=success")
         print("Post method status is", res.status.code)
     
-class MyseqTest(HttpUser):
+  class MyseqTest(HttpUser):
     wait_time=constant(3)
     host="https://flask-azure-project2.azurewebsites.net/"
     tasks=[MyReqRes]
@@ -451,4 +436,5 @@ There are a lots of ways project can be inproved in future. We have done a very 
   https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python?view=azure-devops#run-lint-tests-with-flake8?WT.mc_id=udacity_learn-wwl
   https://docs.microsoft.com/en-us/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml
   https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops
+  https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh
   
