@@ -152,6 +152,7 @@ Enable Github Actions
 * Replace the pythonapp.yml code with the following scaffolding code.
 
 
+
   name: Python application test with Github Actions
 
   on: [push]
@@ -178,13 +179,18 @@ Enable Github Actions
         make test
         
     
-   * This is the next step after putting yml code and save. here you can see whether your code is successful or not.
     
-![Screen Shot 2021-11-10 at 8 55 27 PM](https://user-images.githubusercontent.com/54340800/141229219-c971cd90-d504-4cf9-a799-83b46096feb5.png)
+    
+    
+  
+    
+    * This is the next step after putting yml code and save. here you can see whether your code is successful or not.
+    
+    ![Screen Shot 2021-11-10 at 8 55 27 PM](https://user-images.githubusercontent.com/54340800/141229219-c971cd90-d504-4cf9-a799-83b46096feb5.png)
 
    
 
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD].
 
 * Running Azure App Service from Azure Pipelines automatic deployment
 
@@ -450,4 +456,5 @@ Successful machine learning prediction that returns back a JSON payload
   https://docs.microsoft.com/en-us/azure/devops-project/azure-devops-project-python?WT.mc_id=udacity_learn-wwl
   https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python?view=azure-devops#run-lint-tests-with-flake8?WT.mc_id=udacity_learn-wwl
   https://docs.microsoft.com/en-us/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml
+  https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops
   
