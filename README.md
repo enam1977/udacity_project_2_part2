@@ -58,7 +58,7 @@ Launch the azure shell environment ,create ssh-keys and upload the Github
 ![Screen Shot 2021-11-10 at 8 52 53 PM](https://user-images.githubusercontent.com/54340800/141228984-d601f190-7039-4c6f-acec-c802b844fe59.png)
 
 
-Once you click on the PowerShell, the next step will be to select the Subscription to proceed ahead. If you dont have any storage account you need to create a simple Storage Account here in order to store the cloud shell scripts to be stored and executed. Go ahead and click on Create Storage. It might take some time to create the necessary storage requirements.
+* Once you click on the PowerShell, the next step will be to select the Subscription to proceed ahead. If you dont have any storage account you need to create a simple Storage Account here in order to store the cloud shell scripts to be stored and executed. Go ahead and click on Create Storage. It might take some time to create the necessary storage requirements.
 
 * Create Storage Account
 
@@ -102,7 +102,8 @@ Add your SSH private key to the ssh-agent. If you created your key with a differ
 
   $ ssh-add ~/.ssh/id_ed25519
 
-# Adding a new SSH key to your GitHub account
+
+Adding a new SSH key to your GitHub account
 
 * Copy the SSH public key to your clipboard.
 
@@ -112,7 +113,7 @@ If your SSH public key file has a different name than the example code, modify t
   
   <img width="890" alt="SSH-keys_paste" src="https://user-images.githubusercontent.com/54340800/140677693-0ce291fd-ee5c-4ab6-bc14-d6589def1967.png">
 
-# Clone github repo to local drive in the virtual environment
+Clone github repo to local drive in the virtual environment
 
 * Get the code link from the repo shown below and 
 
@@ -138,19 +139,19 @@ If your SSH public key file has a different name than the example code, modify t
 
 ![Screen Shot 2021-11-08 at 4 47 06 PM](https://user-images.githubusercontent.com/54340800/140831727-daf829b0-38d1-4b43-b7ae-5c7bee27ade1.png)
 
+
 Enable Github Actions
 
-Go to your Github Account and enable Github Actions.
+* Go to your Github Account and enable Github Actions.
 
-2. Replace yml code
-Replace the pythonapp.yml code with the following scaffolding code.
+* Replace the pythonapp.yml code with the following scaffolding code.
 
-name: Python application test with Github Actions
+  name: Python application test with Github Actions
 
-on: [push]
+  on: [push]
 
-jobs:
-  build:
+  jobs:
+    build:
 
     runs-on: ubuntu-latest
 
