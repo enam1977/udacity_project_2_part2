@@ -399,22 +399,14 @@ There are a lots of ways project can be inproved in future. We have done a very 
 
 ## Demo 
   
- # Setup Azure Cloud shell
-  
-  https://youtu.be/J_RS9Ti9Wgo
-  
- # Make command to check the Makefile passed
-  
-  https://youtu.be/TpChVwfO5d0
- 
- # Github Action
-  
-  https://youtu.be/x6WnAjmQgVU
-  
- # Azure_Pipeline_Continious_Delivery
-  
-  https://youtu.be/tpZ1EsW3qX
+showing a demonstration of:
 
+Working Azure Cloud Shell environment for Continuous Integration
+Working GitHub Actions build
+Successful deployment using Continuous Delivery on the Azure platform.
+Successful machine learning prediction that returns back a JSON payload
+  
+  
 
  # References
   
