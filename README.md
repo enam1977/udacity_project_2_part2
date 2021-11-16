@@ -193,7 +193,7 @@ jobs:
 
 * The GitHub actions badge
 
-![Screen Shot 2021-11-15 at 8 30 38 PM](https://user-images.githubusercontent.com/54340800/141885206-5ba9f314-e4ec-484e-ba80-016c4effce10.png)
+[![Python application test with Github Actions](https://github.com/enam1977/udacity_project_2_part1/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/enam1977/udacity_project_2_part1/actions/workflows/pythonapp.yml)
 
 # deploy of the project in Azure Pipelines. 
 
