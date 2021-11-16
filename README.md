@@ -30,8 +30,10 @@ DevOps practices
 * Architectural Diagram (Shows how key parts of the system work)>
 
   Architectural Diagram
+  
+![Screen Shot 2021-11-15 at 9 36 08 PM](https://user-images.githubusercontent.com/54340800/141891424-31e14910-373f-4a00-8cf6-bf687e28ceb5.png)
 
-![Screen Shot 2021-11-07 at 11 25 24 AM](https://user-images.githubusercontent.com/54340800/140655153-45fc6034-3070-4ea8-bd2f-993373f6d444.png)
+
 
 ## Project running on Azure App Service
 
@@ -113,9 +115,9 @@ Adding a new SSH key to your GitHub account
  
  * Paste the SSH keys in the Github by following the below instruction in the image
   
- <img width="890" alt="SSH-keys_paste" src="https://user-images.githubusercontent.com/54340800/140677693-0ce291fd-ee5c-4ab6-bc14-d6589def1967.png">
+  <img width="890" alt="SSH-keys_paste" src="https://user-images.githubusercontent.com/54340800/140677693-0ce291fd-ee5c-4ab6-bc14-d6589def1967.png">
 
-Clone github repo to local drive in the virtual environment
+  Clone github repo to local drive in the virtual environment
 
 * Get the code link from the repo shown below and 
 
@@ -315,22 +317,22 @@ Provision an App Service with single commands
   * Create a resource group.
   In the Cloud Shell, run the following command to create a resource group in your Azure subscription. Set a location for the resource group by specifying the     value of <your-region>.
 
-  az group create -l <your-region> -n <your-resource-group>
+    az group create -l <your-region> -n <your-resource-group>
   
  * Create an App Service Plan.
   An App Service runs inside a VM defined by an App Service Plan. Run the following command to create an App Service Plan, substituting your own values for         <your-resource-group> and <your-appservice-plan>. The --is-linux is required for Python deployments. If you want a pricing plan other than the default F1 Free   plan, use the sku argument. The --sku B1 specifies the lower-price compute tier for the VM. You can easily delete the plan later by deleting the resource         group.
 
-  az appservice plan create -g <your-resource-group> -n <your-appservice-plan> --is-linux --sku B1
+    az appservice plan create -g <your-resource-group> -n <your-appservice-plan> --is-linux --sku B1
   
 * Create an App Service instance in the plan.
   Run the following command to create the App Service instance in the plan, replacing <your-appservice> with a name that's unique across Azure.
   If you want to deploy your code at the same time you create the app service, you can use the --deployment-source-url and --deployment-source-branch arguments     with the az webapp create command.
   
-  az webapp create -g <your-resource-group> -p <your-appservice-plan> -n <your-appservice> --runtime "Python|3.6"
+    az webapp create -g <your-resource-group> -p <your-appservice-plan> -n <your-appservice> --runtime "Python|3.6"
   
 * If your app requires a custom startup command, use the az webapp config set command, as described earlier in Provision the target Azure App Service. For         example, to customize the App Service with your resource group, app name, and startup command, run:
 
-  az webapp config set -g <your-resource-group> -n <your-appservice> --startup-file <your-startup-command-or-file>
+    az webapp config set -g <your-resource-group> -n <your-appservice> --startup-file <your-startup-command-or-file>
   
  The App Service at this point contains only default app code. You can now use Azure Pipelines to deploy your specific app code.
   
