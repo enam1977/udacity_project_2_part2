@@ -189,6 +189,9 @@ jobs:
     
 ![Screen Shot 2021-11-10 at 8 55 27 PM](https://user-images.githubusercontent.com/54340800/141229219-c971cd90-d504-4cf9-a799-83b46096feb5.png)
 
+* The GitHub actions badge
+
+![Screen Shot 2021-11-15 at 8 30 38 PM](https://user-images.githubusercontent.com/54340800/141885206-5ba9f314-e4ec-484e-ba80-016c4effce10.png)
 
 # deploy of the project in Azure Pipelines. 
 
