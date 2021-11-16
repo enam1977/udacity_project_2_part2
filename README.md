@@ -105,7 +105,7 @@ if you have already storage account you will ge the azure shell like this
   $ ssh-add ~/.ssh/id_ed25519
 
 
-Adding a new SSH key to your GitHub account
+  Adding a new SSH key to your GitHub account
 
 * Copy the SSH public key to your clipboard.
 
