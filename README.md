@@ -7,7 +7,8 @@ Create a azure pipeline azure Continuous Integration and Continuous Delivery usi
 First to create a project plan in Trello and spreadsheet. Here is the link for both below
 
 * A link to a Trello board for the project
-https://trello.com/b/JBlYiBbd/to-do
+
+https://trello.com/invite/b/JBlYiBbd/b9d1f1107b7687c298d7a4ec3cd5454c/to-do
 * A link to a spreadsheet that includes the original and final project plan
 https://docs.google.com/spreadsheets/d/1YjrBt-l6RQC9xPeYgFklU0uK3osKhnzwvnNehwnNigc/edit?usp=sharing
 
