@@ -8,7 +8,7 @@ First to create a project plan in Trello and spreadsheet. Here is the link for b
 
 * A link to a Trello board for the project
 https://trello.com/b/JBlYiBbd/to-do
-* A link to a spreadsheet that includes the original and final project plan>
+* A link to a spreadsheet that includes the original and final project plan
 https://docs.google.com/spreadsheets/d/1YjrBt-l6RQC9xPeYgFklU0uK3osKhnzwvnNehwnNigc/edit?usp=sharing
 
 ## Azure DevOps Principles and Practices
